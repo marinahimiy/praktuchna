@@ -1,0 +1,64 @@
+<!--Фундамент-->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8" />
+	<title>Реєстрація</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+<body>
+	<!--Меню-->
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html"><img src="images/logo.gif" alt="Logo" /></a>
+			</div>
+			<ul>
+				<li class="first current"><a href="index.html">Головна</a></li>
+				<li><a href="recipes.html">Рецепти</a></li>
+				<li class="last"><a href="reg.html">Реєстр</a></li>
+			</ul>
+		</div>
+		<!--Наповнення-->
+		<div id="content">
+			<div>
+				<div class="aside">
+					<div>
+						<span>Наші соц. мережі</span>
+						<ol>
+							<li><a href="#" class="subscribe">Підпишіться</a></li>
+						</ol>
+						<!--Адреса-->
+						<span>Наш номер</span>
+						<b>+380 98 52 64 307 <span></span></b>
+						<span>Адреса</span>
+						<p>Україна, <br />Івано-Франківська область<br />Калушський район<br />Брошнів-Осада, 22 січня</p>
+					</div>
+				</div>
+				<div>
+					<!--Реєстрація-->
+					<h3>Рєстрація</h3>
+					<form action="#">
+						<p>Ви можете долучитися до нашого блоку про здорове харчування та підтримувати зв'язок з однодумцями, писати цікаві рецепти та зберігати їх у себе в кабінеті. </p>
+						<label for="name">Ім'я</label><input type="text" required id="name" />
+						<label for="name" >Прізвище</label><input type="text" required id="name1" />
+						<label for="start">День народження:</label>
+						<input type="date" required id="start" name="trip-start" value="" min="1990-01-01" max="2005-12-31">
+                        <label for="email"  >E-mail</label><input type="text" required id="email" />
+						<label for="pass">Пароль (8 символів мінімум):</label>
+    <!--Тут паролі. Можете перевірити: не заповнивши любе поле, вам не дозволять провести реєстрацію, зробила завдяки "required" в кожній частинці "input" в кодах імені, прізвища, емайлу тощо-->
+						<input type="password" id="pass" name="password"
+           minlength="8" required>
+		   <label for="pass">Пароль повторно (8 символів мінімум):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+		   <input type="submit" value="" class="submit" />
+
+					</form>
+				</div>
+			</div>
+		</div>
+		
+	</div>	
+</body>
+</html>
